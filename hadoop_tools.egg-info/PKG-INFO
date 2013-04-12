@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: hadoop-tools
+Version: 0.0.1dev
+Summary: some tools for upload file to hadoop
+Home-page: http://www.timger.info/about
+Author: @timger
+Author-email: yishenggudou@gmail.com
+License: QIYI
+Description: UNKNOWN
+Keywords: hadoop rq
+Platform: UNKNOWN

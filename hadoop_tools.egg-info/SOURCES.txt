@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+hadoop_tools/__init__.py
+hadoop_tools.egg-info/PKG-INFO
+hadoop_tools.egg-info/SOURCES.txt
+hadoop_tools.egg-info/dependency_links.txt
+hadoop_tools.egg-info/entry_points.txt
+hadoop_tools.egg-info/not-zip-safe
+hadoop_tools.egg-info/top_level.txt
