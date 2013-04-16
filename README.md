@@ -1,4 +1,0 @@
-hadooptools
-===========
-
-for hadoop upload
