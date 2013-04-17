@@ -1,0 +1,20 @@
+redis:
+    host: "rq.qlog.qiyi.domain"
+    port: 6379
+hive:
+    host:   "10.10.131.224"
+    port:   10000
+log:
+    log_dir:    "/data/qlogtemp/log/"
+    log_name:   "hadoop_upload"
+jobs:
+    -   uriformat: "http://{host}:{port}/access.log.{year}{month}{day}{hour}.gz"
+        name: "diaodu"
+        tmpdir: "/data11/logs/diaodu/"
+        #moduledir: "/data/osd-qlog/trunk/logparse/diaodu/"
+        moduledir: "/Users/timger/osd-qlog/trunk/logparse/diaodu"
+        parsefile: "parse"
+        parsefunction: "Qparse1"
+        readbuff: "64*1024*1024*4"
+        filetype: "gz"
+        hadoop_dir: "/qlog/diaodulogs/{year}{month}{day}{hour}/"
