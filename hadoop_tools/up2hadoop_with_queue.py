@@ -14,6 +14,7 @@ from up2hadoop_ import up2hadoop as up2hadoop_
 
 
 def up2hadoop(path, hadoop_dir,):
+    print "up2hadoop", path, hadoop_dir
     Q.enqueue(up2hadoop_,
               args=(path, hadoop_dir,),
               )

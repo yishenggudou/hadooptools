@@ -31,7 +31,7 @@ __all__ = ["Q", "GetQueue"]
 default_redis = Redis(host=conf['redis']['host'], port=conf['redis']['port'])
 use_connection(default_redis)
 
-Q = Queue(name="rq_queue_{0}".format(host_name), connection=default_redis)
+Q = Queue(name="rQ_queue_{0}".format(host_name), connection=default_redis)
 
 
 def GetQueue(name, host=None, port=None):

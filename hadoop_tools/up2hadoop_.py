@@ -16,6 +16,7 @@ from conf import conf
 
 
 def up2hadoop(path, hadoop_dir):
+    print ">>>up2hadoop", path, hadoop_dir
     local_path = os.path.abspath(path)
     local_path = path
     hadoop_path = os.path.join(hadoop_dir, os.path.split(path)[-1])

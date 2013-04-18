@@ -41,6 +41,7 @@ def parsejob(**kwargs):
         gzip_path = '.'.join([path, str(n), 'gz'])
         gzipfile = gzip.open(gzip_path, 'wb')
         gzipfile.write(Qparse_fun(line))
+        print gzip_path
         for line in f.readlines(readbuff):
             t = Qparse_fun(line)
             if t:
